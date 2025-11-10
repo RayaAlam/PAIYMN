@@ -626,6 +626,30 @@
             box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
         }
         
+        /* Scroll Top */
+        .scroll-top {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #6eaaff, #1da0e1, #266bff);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            text-decoration: none;
+            box-shadow: 0 15px 40px rgba(139, 92, 246, 0.5);
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .scroll-top:hover {
+            transform: translateY(-15px) scale(1.15);
+            box-shadow: 0 25px 60px rgba(139, 92, 246, 0.7);
+        }
+
         /* Responsive */
         @media (max-width: 1024px) {
             .sidebar {
@@ -723,7 +747,7 @@
     <!-- Main Content -->
     <main class="main-content">
         <!-- Hero -->
-        <section class="hero">
+        <section id="hero" class="hero">
             <div class="hero-badge">Anindya Yumna</div>
             <h1>Belajar Tajwid Secara Interaktif dengan<br>Audio dan Visual</h1>
             <p>Platform pembelajaran ilmu tajwid yang interaktif, modern, dan mudah dipahami untuk semua kalangan</p>
@@ -1336,6 +1360,8 @@
             <p style="font-size: 0.9rem;">Semoga bermanfaat untuk pembelajaran ilmu tajwid</p>
         </div>
     </main>
+
+    <a href="#hero" class="scroll-top">↑</a>
     
     <script>
         // Mobile menu toggle
@@ -1420,5 +1446,4 @@
         });
     </script>
 </body>
-
 </html>
